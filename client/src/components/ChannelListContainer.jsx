@@ -58,7 +58,7 @@ const ChannelListContent = ({isCreating, setIsCreating, setCreateType, setIsEdit
       <SideBar logout={logout} />
       <div className="channel-list__list__wrapper">
         <ChatHeader />
-        <ChannelSearch />
+        <ChannelSearch setToggleContainer={setToggleContainer} />
         <ChannelList
           filters={filters}
           channelRenderFilterFn={customChannelTeamFilter}
